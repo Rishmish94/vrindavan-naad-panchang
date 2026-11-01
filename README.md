@@ -1,6 +1,10 @@
 # vrindavan-naad-panchang
 Panchang data generator for Vrindavan Naad (New Delhi, Lahiri, Purnimanta)
 
+**Verification:** Phase 1 output was checked against the Rashtriya Panchang
+2026–27 (IMD) — all values within 1 minute. Details and open items:
+[VERIFICATION.md](VERIFICATION.md).
+
 ## Running the generator
 
 Setup once (see [Setup](#setup)), then from this folder:
