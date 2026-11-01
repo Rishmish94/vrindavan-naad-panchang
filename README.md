@@ -22,6 +22,7 @@ with code 1 if any self-test fails.
 | `data/panchang-2026.json` | 1 Nov – 31 Dec 2026, pretty-printed |
 | `data/panchang-2026.min.json` | same, no spaces (for the website) |
 | `data/panchang-2027.json` / `.min.json` | all of 2027 |
+| `data/monthly/YYYY-MM.min.json` | with `--monthly` only: one minified file per month (2026-11 … 2027-12), same entries and fields as the yearly files |
 | `data/festivals-draft-2026.json`, `-2027.json` | festival draft for manual verification — **never shown on the site** |
 
 Not written by `generate.py` (maintained by hand):
@@ -32,6 +33,22 @@ Not written by `generate.py` (maintained by hand):
 | `data/festivals-2027.json` | same, Jan–Mar 2027 (Apr–Dec to follow from the 2027-28 book) |
 
 The date ranges are set in `RANGES` at the top of `generate.py`.
+
+### Monthly files
+
+```
+.venv\Scripts\python generate.py --monthly
+```
+
+Does everything above (yearly files and their self-test, unchanged) and also
+writes one minified file per month to `data/monthly/YYYY-MM.min.json`, each a
+JSON array of that month's day entries in exactly the yearly format (about
+43–48 KB each, so a page can load just the month it shows). Each file's size
+is printed. An extra self-test checks that the monthly files together contain
+exactly the same entries as the yearly files, with no missing or duplicate
+dates, and that each file holds only its own month. If `RANGES` changes, delete
+stale files in `data/monthly/` — the self-test fails on any file outside the
+ranges.
 
 ### Check mode
 
@@ -55,6 +72,8 @@ another day, e.g. `1:11 PM (2 Nov)`.
 - Vikram Samvat cross-checked against drik-panchanga's own formula
 - only digits 0–9 in every file; `.min.json` equals `.json`; every festival
   entry `"verified": false`
+- with `--monthly`: monthly files together equal the yearly files — no
+  missing or duplicate dates, each file only its own month
 - file sizes are printed
 
 ### Panchang format

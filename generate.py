@@ -6,10 +6,12 @@ Calculations: drik-panchanga on Swiss Ephemeris (pysweph).
 
 Usage
   python generate.py                          generate data/*.json + self-test
+  python generate.py --monthly                same, plus data/monthly/YYYY-MM.min.json
   python generate.py --check 2026-11-01 ...   print those days as a table
 
 Outputs (one entry per Gregorian date, IST)
   data/panchang-YYYY.json / .min.json         daily panchang
+  data/monthly/YYYY-MM.min.json               same entries, one file per month (--monthly)
   data/festivals-draft-YYYY.json              festival draft, all "verified": false
 """
 
@@ -509,13 +511,72 @@ def write_json(path, data, pretty):
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
 
 
-def generate():
+MONTHLY_DIR = DATA_DIR / "monthly"
+
+
+def write_monthly(all_days):
+    """One minified file per month: data/monthly/YYYY-MM.min.json."""
+    MONTHLY_DIR.mkdir(exist_ok=True)
+    months = {}
+    for entry in all_days:
+        months.setdefault(entry["date"][:7], []).append(entry)
+    paths = []
+    for month, days in months.items():
+        path = MONTHLY_DIR / f"{month}.min.json"
+        write_json(path, days, pretty=False)
+        paths.append(path)
+    return paths
+
+
+def self_test_monthly(paths):
+    """Monthly files together = yearly files: same entries, no missing or
+    duplicate dates, every file holds only its own month."""
+    problems = []
+    yearly = []
+    for year in RANGES:
+        yearly += json.loads((DATA_DIR / f"panchang-{year}.min.json").read_text(encoding="utf-8"))
+    expected_files = {f"{e['date'][:7]}.min.json" for e in yearly}
+    found_files = {p.name for p in MONTHLY_DIR.glob("*.min.json")}
+    if found_files != expected_files:
+        extra, missing = sorted(found_files - expected_files), sorted(expected_files - found_files)
+        problems.append(f"monthly files differ from the date ranges (extra: {extra}, missing: {missing})")
+
+    monthly = []
+    for path in sorted(paths):
+        text = path.read_text(encoding="utf-8")
+        days = json.loads(text)
+        month = path.name[:7]
+        if any(e["date"][:7] != month for e in days):
+            problems.append(f"{path.name}: contains dates from another month")
+        if re.search("[०-९]", text):
+            problems.append(f"{path.name}: contains Devanagari digits")
+        monthly += days
+
+    dates = [e["date"] for e in monthly]
+    if len(dates) != len(set(dates)):
+        problems.append("duplicate dates across monthly files")
+    if set(dates) != {e["date"] for e in yearly}:
+        problems.append("monthly files miss dates that are in the yearly files (or add extra ones)")
+    if sorted(monthly, key=lambda e: e["date"]) != yearly:
+        problems.append("monthly entries are not identical to the yearly entries")
+
+    print(f"  Self-test monthly: {len(paths)} files, {len(monthly)} days — identical to yearly files, "
+          f"no missing or duplicate dates: {'OK' if not problems else 'FAILED'}")
+    for p in problems:
+        print("    ✗", p)
+    for path in sorted(paths):
+        print(f"    {path.relative_to(DATA_DIR.parent)}  {path.stat().st_size / 1024:,.1f} KB")
+    return not problems
+
+
+def generate(monthly=False):
     DATA_DIR.mkdir(exist_ok=True)
     all_first = min(r[0] for r in RANGES.values())
     all_last = max(r[1] for r in RANGES.values())
     print(f"Computing timelines {all_first} → {all_last} …")
     tl = Timelines(all_first - timedelta(days=45), all_last + timedelta(days=45))
     ok = True
+    all_days = []
     for year, (first, last) in RANGES.items():
         days, extras = [], []
         for d in date_range(first, last):
@@ -530,6 +591,11 @@ def generate():
         write_json(paths[2], festivals, pretty=True)
         print(f"{year}: {first} → {last}, {len(days)} days, {len(festivals)} festival draft entries")
         ok &= self_test(year, days, extras, festivals, paths)
+        all_days += days
+    if monthly:
+        paths = write_monthly(all_days)
+        print(f"Monthly: {len(paths)} files in {MONTHLY_DIR.relative_to(DATA_DIR.parent)}")
+        ok &= self_test_monthly(paths)
     print("All self-tests passed." if ok else "SELF-TEST FAILED.")
     return ok
 
@@ -562,11 +628,13 @@ def main():
     parser = argparse.ArgumentParser(description="Vrindavan Naad panchang generator")
     parser.add_argument("--check", nargs="+", metavar="YYYY-MM-DD",
                         help="print these days as a table instead of generating files")
+    parser.add_argument("--monthly", action="store_true",
+                        help="also write data/monthly/YYYY-MM.min.json (one file per month)")
     args = parser.parse_args()
     if args.check:
         check([date.fromisoformat(s) for s in args.check])
         return 0
-    return 0 if generate() else 1
+    return 0 if generate(monthly=args.monthly) else 1
 
 
 if __name__ == "__main__":
