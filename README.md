@@ -24,6 +24,12 @@ with code 1 if any self-test fails.
 | `data/panchang-2027.json` / `.min.json` | all of 2027 |
 | `data/festivals-draft-2026.json`, `-2027.json` | festival draft for manual verification — **never shown on the site** |
 
+Not written by `generate.py` (maintained by hand):
+
+| File | Contents |
+|---|---|
+| `data/festivals-2026.json` | verified festival list for the website — see [Festival dates: always verify](#festival-dates-always-verify) |
+
 The date ranges are set in `RANGES` at the top of `generate.py`.
 
 ### Check mode
@@ -111,6 +117,55 @@ both; `"date"` = Smarta date).
   (96 minutes before sunrise) — otherwise it is Dashami-viddha and moves to
   the next day — and if it prevails at two sunrises, the second day.
   Names follow the Purnimanta month (Parama / Padmini in an adhika month).
+
+## Festival dates: always verify
+
+The library's festival dates were **wrong at least 6 times in Nov 2026 – Mar
+2027** when checked against the Rashtriya Panchang 2026–27:
+
+| Festival | Draft (library) | Rashtriya Panchang |
+|---|---|---|
+| Dhanteras | 7 Nov 2026 | 6 Nov 2026 |
+| Diwali / Lakshmi Puja | 9 Nov 2026 | 8 Nov 2026 |
+| Govardhan Puja | 10 Nov 2026 | 9 Nov 2026 |
+| Dev Uthani Ekadashi (Smarta) | 21 Nov 2026 | 20 Nov 2026 |
+| Pausha Putrada Ekadashi (Smarta) | 19 Jan 2027 | 18 Jan 2027 |
+| Maha Shivaratri | 7 Mar 2027 | 6 Mar 2027 |
+
+Still to decide: **Vijaya Ekadashi** (draft Smarta 3 Mar 2027, book 4 Mar)
+and **Makar Sankranti** (draft 15 Jan 2027, book 14 Jan, North India).
+
+**Causes:** many festivals are decided by the tithi in the evening, in Pradosh
+kaal or at midnight, not by the tithi at sunrise that the library mostly uses;
+and Ekadashi can split between Smarta and Vaishnava dates.
+
+**Rule:**
+- `data/festivals-draft-*.json` are drafts only. **Never publish draft dates
+  directly.**
+- Only entries in `data/festivals-YYYY.json` with `"verified": true` may appear
+  on the website.
+
+### `festivals-YYYY.json` format
+
+A JSON array sorted by date; each entry has exactly these fields:
+
+```json
+{"date": "2026-11-05", "dev": "रमा एकादशी", "en": "Rama Ekadashi", "type": "vrat",
+ "tradition_note": null, "bhadra_note": null, "verified": true,
+ "source": "Rashtriya Panchang 2026-27"}
+```
+
+- `type`: `"festival"` or `"vrat"`.
+- `tradition_note`: `null`, or a short note such as `"Vaishnava: tomorrow"`
+  when Smarta and Vaishnava dates differ.
+- `bhadra_note`: `null` for now.
+- `verified`: `true` only after checking against the Rashtriya Panchang (or,
+  for festivals not in the book, a trusted source); `false` entries are held
+  back from the site.
+- `source`: where the date came from.
+
+Checks when editing: valid JSON, real dates, digits 0–9 only, no duplicate
+(`date`, `en`) pairs.
 
 ## Library choice
 

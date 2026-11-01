@@ -1,0 +1,212 @@
+[
+  {
+    "date": "2026-11-05",
+    "dev": "रमा एकादशी",
+    "en": "Rama Ekadashi",
+    "type": "vrat",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-06",
+    "dev": "धनतेरस",
+    "en": "Dhanteras",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-08",
+    "dev": "नरक चतुर्दशी",
+    "en": "Naraka Chaturdashi · Choti Diwali",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": false,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-08",
+    "dev": "दीपावली · लक्ष्मी पूजा",
+    "en": "Diwali · Lakshmi Puja",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": false,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-09",
+    "dev": "गोवर्धन पूजा · अन्नकूट",
+    "en": "Govardhan Puja · Annakut",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-11",
+    "dev": "भाई दूज",
+    "en": "Bhai Dooj",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-15",
+    "dev": "छठ पूजा",
+    "en": "Chhath Puja",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-17",
+    "dev": "गोपाष्टमी",
+    "en": "Gopashtami",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-18",
+    "dev": "अक्षय नवमी · आंवला नवमी",
+    "en": "Akshaya Navami · Amla Navami",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-20",
+    "dev": "देवउठनी एकादशी",
+    "en": "Dev Uthani Ekadashi",
+    "type": "vrat",
+    "tradition_note": "Vaishnava: tomorrow",
+    "bhadra_note": null,
+    "verified": false,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-21",
+    "dev": "तुलसी विवाह",
+    "en": "Tulsi Vivah",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-21",
+    "dev": "देवउठनी एकादशी",
+    "en": "Dev Uthani Ekadashi",
+    "type": "vrat",
+    "tradition_note": "Smarta: yesterday",
+    "bhadra_note": null,
+    "verified": false,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-23",
+    "dev": "वैकुण्ठ चतुर्दशी",
+    "en": "Vaikuntha Chaturdashi",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-24",
+    "dev": "कार्तिक पूर्णिमा",
+    "en": "Kartik Purnima",
+    "type": "vrat",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-11-24",
+    "dev": "गुरु नानक जयंती",
+    "en": "Guru Nanak Jayanti",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-12-04",
+    "dev": "उत्पन्ना एकादशी",
+    "en": "Utpanna Ekadashi",
+    "type": "vrat",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-12-14",
+    "dev": "विवाह पंचमी · बांके बिहारी प्रकट्य उत्सव",
+    "en": "Vivah Panchami · Banke Bihari Prakatya Utsav",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": false,
+    "source": "calculator (Margashirsha Shukla Panchami at sunrise); pending check"
+  },
+  {
+    "date": "2026-12-20",
+    "dev": "मोक्षदा एकादशी",
+    "en": "Mokshada Ekadashi",
+    "type": "vrat",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-12-20",
+    "dev": "गीता जयंती",
+    "en": "Gita Jayanti",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-12-23",
+    "dev": "दत्तात्रेय जयंती",
+    "en": "Dattatreya Jayanti",
+    "type": "festival",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": true,
+    "source": "Rashtriya Panchang 2026-27"
+  },
+  {
+    "date": "2026-12-23",
+    "dev": "मार्गशीर्ष पूर्णिमा",
+    "en": "Margashirsha Purnima",
+    "type": "vrat",
+    "tradition_note": null,
+    "bhadra_note": null,
+    "verified": false,
+    "source": "Rashtriya Panchang 2026-27"
+  }
+]
