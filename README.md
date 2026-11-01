@@ -28,7 +28,8 @@ Not written by `generate.py` (maintained by hand):
 
 | File | Contents |
 |---|---|
-| `data/festivals-2026.json` | verified festival list for the website — see [Festival dates: always verify](#festival-dates-always-verify) |
+| `data/festivals-2026.json` | verified festival list for the website, Nov–Dec 2026 — see [Festival dates: always verify](#festival-dates-always-verify) |
+| `data/festivals-2027.json` | same, Jan–Mar 2027 (Apr–Dec to follow from the 2027-28 book) |
 
 The date ranges are set in `RANGES` at the top of `generate.py`.
 
@@ -132,8 +133,12 @@ The library's festival dates were **wrong at least 6 times in Nov 2026 – Mar
 | Pausha Putrada Ekadashi (Smarta) | 19 Jan 2027 | 18 Jan 2027 |
 | Maha Shivaratri | 7 Mar 2027 | 6 Mar 2027 |
 
-Still to decide: **Vijaya Ekadashi** (draft Smarta 3 Mar 2027, book 4 Mar)
-and **Makar Sankranti** (draft 15 Jan 2027, book 14 Jan, North India).
+Decided:
+
+| Festival | Draft (library) | Decision |
+|---|---|---|
+| Makar Sankranti 2027 | 15 Jan | Both, as the book lists: **Makar Sankranti 14 Jan** and **Makar Sankranti Snan-Daan 15 Jan** |
+| Vijaya Ekadashi 2027 | Smarta 3 Mar / Vaishnava 4 Mar | Book date **4 Mar only**, no tradition note |
 
 **Causes:** many festivals are decided by the tithi in the evening, in Pradosh
 kaal or at midnight, not by the tithi at sunrise that the library mostly uses;
@@ -144,6 +149,16 @@ and Ekadashi can split between Smarta and Vaishnava dates.
   directly.**
 - Only entries in `data/festivals-YYYY.json` with `"verified": true` may appear
   on the website.
+
+**Advisor rules:**
+1. When the book lists **one** Ekadashi date but the calculator finds a
+   Smarta/Vaishnava split, show **only the book's date, with no note**.
+2. v1 shows **only festivals the book names**. Monthly vrats not in the book
+   (Pradosh, Sankashti, etc.) come in a later batch.
+
+**Coverage:** `festivals-2026.json` covers Nov–Dec 2026; `festivals-2027.json`
+covers Jan–Mar 2027 (Rashtriya Panchang 2026-27). Apr–Dec 2027 will be added
+from the Rashtriya Panchang 2027-28.
 
 ### `festivals-YYYY.json` format
 
