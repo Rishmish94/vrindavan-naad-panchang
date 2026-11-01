@@ -1,0 +1,13 @@
+# Pinned, complete dependency list. Install WITHOUT dependency resolution:
+#
+#   pip install --no-deps -r requirements.txt
+#
+# Why --no-deps: drik-panchanga declares a dependency on "pyswisseph", whose
+# last release (2023) has no wheels for Python 3.12+ and needs a C compiler to
+# build. pysweph is the maintained community fork of pyswisseph: same
+# "import swisseph" module, same AGPL-3.0 licence, wheels for Windows, Linux
+# and macOS on Python 3.8-3.13. Every package needed is listed here.
+
+drik-panchanga==2.0.0   # panchang calculations (AGPL-3.0-or-later)
+pysweph==2.10.3.6       # Swiss Ephemeris bindings, provides "import swisseph" (AGPL-3.0)
+tzdata==2026.6          # IANA time zones; needed by drik-panchanga on Windows
