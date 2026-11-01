@@ -1,0 +1,94 @@
+[
+  {
+    "date": "2026-11-05",
+    "dev": "रमा एकादशी",
+    "en": "Rama Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2026-11-05",
+    "vaishnava_date": "2026-11-05",
+    "verified": false
+  },
+  {
+    "date": "2026-11-07",
+    "dev": "धनतेरस",
+    "en": "Dhana Trayodashi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2026-11-08",
+    "dev": "नरक चतुर्दशी",
+    "en": "Naraka Chaturdashi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2026-11-09",
+    "dev": "दीपावली",
+    "en": "Deepavali",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2026-11-10",
+    "dev": "बलि प्रतिपदा",
+    "en": "Bali Padyami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2026-11-15",
+    "dev": "छठ पूजा",
+    "en": "Surya Shashthi / Chhath",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2026-11-21",
+    "dev": "देवउठनी एकादशी",
+    "en": "Devutthana Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2026-11-21",
+    "vaishnava_date": "2026-11-21",
+    "verified": false
+  },
+  {
+    "date": "2026-12-04",
+    "dev": "उत्पन्ना एकादशी",
+    "en": "Utpanna Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2026-12-04",
+    "vaishnava_date": "2026-12-04",
+    "verified": false
+  },
+  {
+    "date": "2026-12-20",
+    "dev": "गीता जयंती",
+    "en": "Gita Jayanti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2026-12-20",
+    "dev": "मोक्षदा एकादशी",
+    "en": "Mokshada Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2026-12-20",
+    "vaishnava_date": "2026-12-20",
+    "verified": false
+  },
+  {
+    "date": "2026-12-20",
+    "dev": "वैकुण्ठ एकादशी",
+    "en": "Vaikuntha Ekadashi",
+    "type": "vrat",
+    "verified": false
+  },
+  {
+    "date": "2026-12-22",
+    "dev": "उत्तरायण",
+    "en": "Uttarayana",
+    "type": "festival",
+    "verified": false
+  }
+]

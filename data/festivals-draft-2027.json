@@ -1,0 +1,514 @@
+[
+  {
+    "date": "2027-01-03",
+    "dev": "सफला एकादशी",
+    "en": "Saphala Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-01-03",
+    "vaishnava_date": "2027-01-03",
+    "verified": false
+  },
+  {
+    "date": "2027-01-15",
+    "dev": "मकर संक्रांति",
+    "en": "Makara Sankranti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-01-19",
+    "dev": "पौष पुत्रदा एकादशी",
+    "en": "Pausha Putrada Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-01-19",
+    "vaishnava_date": "2027-01-19",
+    "verified": false
+  },
+  {
+    "date": "2027-02-02",
+    "dev": "षटतिला एकादशी",
+    "en": "Shattila Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-02-02",
+    "vaishnava_date": "2027-02-02",
+    "verified": false
+  },
+  {
+    "date": "2027-02-08",
+    "dev": "वासवी आत्मार्पण",
+    "en": "Vasavi Atmarpana",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-02-11",
+    "dev": "वसंत पंचमी",
+    "en": "Vasanta Panchami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-02-13",
+    "dev": "रथ सप्तमी",
+    "en": "Ratha Saptami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-02-17",
+    "dev": "जया एकादशी",
+    "en": "Jaya Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-02-17",
+    "vaishnava_date": "2027-02-17",
+    "verified": false
+  },
+  {
+    "date": "2027-02-17",
+    "dev": "विष्णु सहस्रनाम जयंती",
+    "en": "VSN Jayanti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-03-03",
+    "dev": "विजया एकादशी",
+    "en": "Vijaya Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-03-03",
+    "vaishnava_date": "2027-03-04",
+    "verified": false
+  },
+  {
+    "date": "2027-03-07",
+    "dev": "महाशिवरात्रि",
+    "en": "Maha Shivaratri",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-03-18",
+    "dev": "आमलकी एकादशी",
+    "en": "Amalaki Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-03-18",
+    "vaishnava_date": "2027-03-18",
+    "verified": false
+  },
+  {
+    "date": "2027-03-22",
+    "dev": "होलिका दहन",
+    "en": "Kama Dahana (Holi)",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-04-02",
+    "dev": "पापमोचिनी एकादशी",
+    "en": "Papmochani Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-04-02",
+    "vaishnava_date": "2027-04-02",
+    "verified": false
+  },
+  {
+    "date": "2027-04-07",
+    "dev": "उगादि",
+    "en": "Ugadi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-04-15",
+    "dev": "मेष संक्रांति",
+    "en": "Mesha Sankranti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-04-15",
+    "dev": "राम नवमी",
+    "en": "Rama Navami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-04-17",
+    "dev": "कामदा एकादशी",
+    "en": "Kamada Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-04-17",
+    "vaishnava_date": "2027-04-17",
+    "verified": false
+  },
+  {
+    "date": "2027-04-20",
+    "dev": "हनुमान जयंती",
+    "en": "Hanuman Jayanti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-05-02",
+    "dev": "वरूथिनी एकादशी",
+    "en": "Varuthini Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-05-02",
+    "vaishnava_date": "2027-05-02",
+    "verified": false
+  },
+  {
+    "date": "2027-05-09",
+    "dev": "अक्षय तृतीया",
+    "en": "Akshaya Tritiya",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-05-15",
+    "dev": "वासवी जयंती",
+    "en": "Vasavi Jayanti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-05-16",
+    "dev": "मोहिनी एकादशी",
+    "en": "Mohini Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-05-16",
+    "vaishnava_date": "2027-05-16",
+    "verified": false
+  },
+  {
+    "date": "2027-05-19",
+    "dev": "नृसिंह जयंती",
+    "en": "Narasimha Jayanti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-06-01",
+    "dev": "अपरा एकादशी",
+    "en": "Apara Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-06-01",
+    "vaishnava_date": "2027-06-01",
+    "verified": false
+  },
+  {
+    "date": "2027-06-14",
+    "dev": "निर्जला एकादशी",
+    "en": "Nirjala Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-06-14",
+    "vaishnava_date": "2027-06-14",
+    "verified": false
+  },
+  {
+    "date": "2027-06-18",
+    "dev": "वट सावित्री पूर्णिमा",
+    "en": "Vata Savitri Purnima",
+    "type": "vrat",
+    "verified": false
+  },
+  {
+    "date": "2027-06-22",
+    "dev": "दक्षिणायन",
+    "en": "Dakshinayana",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-06-30",
+    "dev": "योगिनी एकादशी",
+    "en": "Yogini Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-06-30",
+    "vaishnava_date": "2027-06-30",
+    "verified": false
+  },
+  {
+    "date": "2027-07-14",
+    "dev": "देवशयनी एकादशी",
+    "en": "Devshayani Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-07-14",
+    "vaishnava_date": "2027-07-14",
+    "verified": false
+  },
+  {
+    "date": "2027-07-18",
+    "dev": "गुरु पूर्णिमा",
+    "en": "Guru Purnima",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-07-30",
+    "dev": "कामिका एकादशी",
+    "en": "Kamika Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-07-30",
+    "vaishnava_date": "2027-07-30",
+    "verified": false
+  },
+  {
+    "date": "2027-08-06",
+    "dev": "नाग पंचमी",
+    "en": "Naga Panchami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-08-12",
+    "dev": "श्रावण पुत्रदा एकादशी",
+    "en": "Shravana Putrada Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-08-12",
+    "vaishnava_date": "2027-08-12",
+    "verified": false
+  },
+  {
+    "date": "2027-08-13",
+    "dev": "वरमहालक्ष्मी व्रत",
+    "en": "Varamahalakshmi Vrata",
+    "type": "vrat",
+    "verified": false
+  },
+  {
+    "date": "2027-08-16",
+    "dev": "ऋग् उपाकर्म",
+    "en": "Rig Upakarma",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-08-17",
+    "dev": "रक्षा बंधन",
+    "en": "Raksha Bandhan",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-08-17",
+    "dev": "यजुर् उपाकर्म",
+    "en": "Yajur Upakarma",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-08-25",
+    "dev": "जन्माष्टमी",
+    "en": "Janmashtami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-08-28",
+    "dev": "अजा एकादशी",
+    "en": "Aja Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-08-28",
+    "vaishnava_date": "2027-08-28",
+    "verified": false
+  },
+  {
+    "date": "2027-09-03",
+    "dev": "साम उपाकर्म",
+    "en": "Sama Upakarma",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-09-03",
+    "dev": "स्वर्ण गौरी व्रत",
+    "en": "Swarna Gowri Vrata",
+    "type": "vrat",
+    "verified": false
+  },
+  {
+    "date": "2027-09-04",
+    "dev": "गणेश चतुर्थी",
+    "en": "Ganesha Chaturthi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-09-05",
+    "dev": "ऋषि पंचमी",
+    "en": "Rishi Panchami",
+    "type": "vrat",
+    "verified": false
+  },
+  {
+    "date": "2027-09-11",
+    "dev": "परिवर्तिनी एकादशी",
+    "en": "Parivartini Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-09-11",
+    "vaishnava_date": "2027-09-11",
+    "verified": false
+  },
+  {
+    "date": "2027-09-12",
+    "dev": "ओणम",
+    "en": "Onam",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-09-14",
+    "dev": "अनंत चतुर्दशी",
+    "en": "Ananta Chaturdashi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-09-26",
+    "dev": "इन्दिरा एकादशी",
+    "en": "Indira Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-09-26",
+    "vaishnava_date": "2027-09-26",
+    "verified": false
+  },
+  {
+    "date": "2027-09-30",
+    "dev": "महालया अमावस्या",
+    "en": "Mahalaya Amavasya",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-07",
+    "dev": "दुर्गा अष्टमी",
+    "en": "Durga Ashtami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-09",
+    "dev": "आयुध पूजा",
+    "en": "Ayudha Puja",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-10",
+    "dev": "विजयादशमी",
+    "en": "Vijayadashami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-11",
+    "dev": "पापांकुशा एकादशी",
+    "en": "Papankusha Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-10-11",
+    "vaishnava_date": "2027-10-11",
+    "verified": false
+  },
+  {
+    "date": "2027-10-19",
+    "dev": "करवा चौथ",
+    "en": "Karwa Chauth",
+    "type": "vrat",
+    "verified": false
+  },
+  {
+    "date": "2027-10-25",
+    "dev": "रमा एकादशी",
+    "en": "Rama Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-10-25",
+    "vaishnava_date": "2027-10-26",
+    "verified": false
+  },
+  {
+    "date": "2027-10-27",
+    "dev": "धनतेरस",
+    "en": "Dhana Trayodashi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-28",
+    "dev": "नरक चतुर्दशी",
+    "en": "Naraka Chaturdashi",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-29",
+    "dev": "दीपावली",
+    "en": "Deepavali",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-10-30",
+    "dev": "बलि प्रतिपदा",
+    "en": "Bali Padyami",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-11-04",
+    "dev": "छठ पूजा",
+    "en": "Surya Shashthi / Chhath",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-11-10",
+    "dev": "देवउठनी एकादशी",
+    "en": "Devutthana Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-11-10",
+    "vaishnava_date": "2027-11-10",
+    "verified": false
+  },
+  {
+    "date": "2027-11-24",
+    "dev": "उत्पन्ना एकादशी",
+    "en": "Utpanna Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-11-24",
+    "vaishnava_date": "2027-11-24",
+    "verified": false
+  },
+  {
+    "date": "2027-12-09",
+    "dev": "गीता जयंती",
+    "en": "Gita Jayanti",
+    "type": "festival",
+    "verified": false
+  },
+  {
+    "date": "2027-12-09",
+    "dev": "मोक्षदा एकादशी",
+    "en": "Mokshada Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-12-09",
+    "vaishnava_date": "2027-12-09",
+    "verified": false
+  },
+  {
+    "date": "2027-12-23",
+    "dev": "सफला एकादशी",
+    "en": "Saphala Ekadashi",
+    "type": "vrat",
+    "smarta_date": "2027-12-23",
+    "vaishnava_date": "2027-12-23",
+    "verified": false
+  },
+  {
+    "date": "2027-12-23",
+    "dev": "उत्तरायण",
+    "en": "Uttarayana",
+    "type": "festival",
+    "verified": false
+  }
+]

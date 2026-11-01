@@ -1,6 +1,113 @@
 # vrindavan-naad-panchang
 Panchang data generator for Vrindavan Naad (New Delhi, Lahiri, Purnimanta)
 
+## Running the generator
+
+Setup once (see [Setup](#setup)), then from this folder:
+
+```
+.venv\Scripts\python generate.py          # Windows
+.venv/bin/python generate.py              # Linux / macOS
+```
+
+This writes the files below and runs a self-test (about 10 seconds). It exits
+with code 1 if any self-test fails.
+
+| File | Contents |
+|---|---|
+| `data/panchang-2026.json` | 1 Nov – 31 Dec 2026, pretty-printed |
+| `data/panchang-2026.min.json` | same, no spaces (for the website) |
+| `data/panchang-2027.json` / `.min.json` | all of 2027 |
+| `data/festivals-draft-2026.json`, `-2027.json` | festival draft for manual verification — **never shown on the site** |
+
+The date ranges are set in `RANGES` at the top of `generate.py`.
+
+### Check mode
+
+```
+.venv\Scripts\python generate.py --check 2026-11-01 2026-11-05
+```
+
+Prints those days as a readable table (no files written): sunrise, sunset,
+Rahu Kaal, every tithi / nakshatra / yoga / karana with its end time, and
+Bhadra. Times look like `2:52 PM`, with the date added when it falls on
+another day, e.g. `1:11 PM (2 Nov)`.
+
+### Self-test (runs after every generation)
+
+- one entry per date, in order; sunrise before sunset, both on that date
+- tithis / nakshatras / yogas / karanas cover the whole day (00:00–24:00 IST)
+  with no gaps or overlaps, continuous from the previous day, and tithi
+  numbers in sequence
+- Rahu Kaal equals the 8-part rule (asserted for every day while generating)
+  and lies within daytime
+- Vikram Samvat cross-checked against drik-panchanga's own formula
+- only digits 0–9 in every file; `.min.json` equals `.json`; every festival
+  entry `"verified": false`
+- file sizes are printed
+
+### Panchang format
+
+A JSON array, one object per Gregorian date (IST). Times are ISO 8601 strings
+in IST rounded to the minute, e.g. `"2026-11-01T14:52:00+05:30"`.
+
+```json
+{
+  "date": "2026-11-01",
+  "weekday": {"en": "Sunday", "short": "Sun"},
+  "vikram_samvat": 2083,
+  "masa": {"dev": "कार्तिक", "en": "Kartik", "system": "purnimanta"},
+  "paksha": {"dev": "कृष्ण पक्ष", "en": "Krishna Paksha"},
+  "sunrise": "2026-11-01T06:33:00+05:30",
+  "sunset": "2026-11-01T17:36:00+05:30",
+  "tithis": [
+    {"num": 22, "dev": "कृष्ण सप्तमी", "en": "Krishna Saptami",
+     "start": "2026-10-31T16:58:00+05:30", "end": "2026-11-01T14:52:00+05:30"},
+    {"num": 23, "dev": "कृष्ण अष्टमी", "en": "Krishna Ashtami",
+     "start": "2026-11-01T14:52:00+05:30", "end": "2026-11-02T13:11:00+05:30"}
+  ],
+  "nakshatras": [{"dev": "पुनर्वसु", "en": "Punarvasu", "start": "…", "end": "…"}, …],
+  "yogas": [{"dev": "साध्य", "en": "Sadhya", "start": "…", "end": "…"}, …],
+  "karanas": [{"dev": "विष्टि", "en": "Vishti", "start": "…", "end": "…"}, …],
+  "rahu_kaal": {"start": "2026-11-01T16:13:00+05:30", "end": "2026-11-01T17:36:00+05:30"},
+  "bhadra": [{"start": "2026-10-31T16:58:00+05:30", "end": "2026-11-01T03:52:00+05:30"}]
+}
+```
+
+- **tithis / nakshatras / yogas / karanas**: every one in force at any moment
+  of the date (00:00–24:00 IST), in order, with true start and end (start may
+  be on the previous day, end on the next).
+- **tithi `num`**: 1–15 = Shukla Pratipada … Purnima; 16–30 = Krishna
+  Pratipada … Amavasya.
+- **masa, paksha**: as at sunrise. An adhika month is prefixed
+  `"अधिक "` / `"Adhik "`.
+- **vikram_samvat**: changes at Chaitra Shukla Pratipada (7 April 2027 → 2084).
+- **rahu_kaal**: daytime (sunrise → sunset) in 8 equal parts; Mon 2, Sat 3,
+  Fri 4, Wed 5, Thu 6, Tue 7, Sun 8.
+- **bhadra**: every Vishti karana overlapping the date — listed on both days if
+  it crosses midnight; `[]` = none.
+
+### Festival draft format
+
+A JSON array sorted by date:
+`{"date", "dev", "en", "type": "festival" | "vrat", "verified": false}`.
+Ekadashi entries also have `"smarta_date"` and `"vaishnava_date"` (always
+both; `"date"` = Smarta date).
+
+- Festivals come from drik-panchanga's rule catalogue, fed with our sunrise.
+  The catalogue leans South Indian (Ugadi, Onam, Upakarma) and mostly uses
+  the **tithi-at-sunrise** rule, so festivals that follow another time of
+  day need manual checking — e.g. **Deepavali 2026 comes out as 9 Nov
+  (Amavasya at sunrise); North Indian Lakshmi Puja follows pradosh-kaal
+  Amavasya (8 Nov)**. Same caution for Naraka Chaturdashi, Holika Dahan,
+  Janmashtami (midnight), Maha Shivaratri (nishita), Karwa Chauth (moonrise).
+- Ekadashi **Smarta**: the first day Ekadashi prevails at sunrise; if it
+  prevails at no sunrise (kshaya), the next day (same as drik-panchanga,
+  asserted). **Vaishnava**: Ekadashi must already prevail at arunodaya
+  (96 minutes before sunrise) — otherwise it is Dashami-viddha and moves to
+  the next day — and if it prevails at two sunrises, the second day.
+  Names follow the Purnimanta month (Parama / Padmini in an adhika month).
+
 ## Library choice
 
 ### Fixed settings
