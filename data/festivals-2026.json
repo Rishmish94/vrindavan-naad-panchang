@@ -7,6 +7,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -17,6 +18,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -27,6 +29,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": false,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -37,6 +40,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": false,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -47,6 +51,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -57,6 +62,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -67,6 +73,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -77,6 +84,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -87,6 +95,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -97,6 +106,7 @@
     "tradition_note": "Vaishnava: tomorrow",
     "bhadra_note": null,
     "verified": false,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -107,6 +117,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -117,6 +128,7 @@
     "tradition_note": "Smarta: yesterday",
     "bhadra_note": null,
     "verified": false,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -127,6 +139,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -137,6 +150,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -147,6 +161,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -157,6 +172,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -167,6 +183,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": false,
+    "major": true,
     "source": "calculator (Margashirsha Shukla Panchami at sunrise); pending check"
   },
   {
@@ -177,6 +194,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -187,6 +205,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -197,6 +216,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": true,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   },
   {
@@ -207,6 +227,7 @@
     "tradition_note": null,
     "bhadra_note": null,
     "verified": false,
+    "major": false,
     "source": "Rashtriya Panchang 2026-27"
   }
 ]
