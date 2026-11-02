@@ -28,7 +28,7 @@
     "type": "festival",
     "tradition_note": null,
     "bhadra_note": null,
-    "verified": false,
+    "verified": true,
     "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
@@ -39,7 +39,7 @@
     "type": "festival",
     "tradition_note": null,
     "bhadra_note": null,
-    "verified": false,
+    "verified": true,
     "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
@@ -105,7 +105,7 @@
     "type": "vrat",
     "tradition_note": "Vaishnava: tomorrow",
     "bhadra_note": null,
-    "verified": false,
+    "verified": true,
     "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
@@ -127,7 +127,7 @@
     "type": "vrat",
     "tradition_note": "Smarta: yesterday",
     "bhadra_note": null,
-    "verified": false,
+    "verified": true,
     "major": true,
     "source": "Rashtriya Panchang 2026-27"
   },
@@ -226,7 +226,7 @@
     "type": "vrat",
     "tradition_note": null,
     "bhadra_note": null,
-    "verified": false,
+    "verified": true,
     "major": false,
     "source": "Rashtriya Panchang 2026-27"
   }
